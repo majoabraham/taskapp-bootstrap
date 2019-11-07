@@ -82,4 +82,14 @@ public class TaskResource {
 
         return taskService.update(task);
     }
+
+    @Path("/filter/{text}")
+    @GET
+    public List<Task> filterTasks(@PathParam("text") String text) {
+
+        FindParams findParams = FindParams.create();
+        findParams.addFilter("description", text);
+
+        return taskService.findAll(findParams).getItems();
+    }
 }

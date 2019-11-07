@@ -25,11 +25,27 @@ package sk.fourq.mario.taskappbootstrap;
 import sk.fourq.bootstrap.dao.jpa.AbstractDaoJpa;
 
 import javax.ejb.Stateless;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 @Stateless
 public class TaskDaoJpa extends AbstractDaoJpa<Task, Integer> implements TaskDao {
 
+    private static Set<String> filterableFields;
+
+    static {
+        filterableFields = new HashSet<>();
+        filterableFields.add("description");
+    }
+
     public TaskDaoJpa() {
         super(Task.class);
+    }
+
+    @Override
+    public Set<String> getFilterableFields() {
+
+        return Collections.unmodifiableSet(filterableFields);
     }
 }
