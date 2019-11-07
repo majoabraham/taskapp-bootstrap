@@ -23,7 +23,6 @@
 package sk.fourq.mario.taskappbootstrap;
 
 import sk.fourq.bootstrap.search.FindParams;
-import sk.fourq.bootstrap.search.FindResult;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -36,6 +35,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import java.util.List;
 
 @Path("task")
 @Produces(MediaType.APPLICATION_JSON)
@@ -51,10 +51,10 @@ public class TaskResource {
     private TaskService taskService;
 
     @GET
-    public FindResult<Task> getTasks() {
+    public List<Task> getTasks() {
 
         FindParams findParams = FindParams.create();
-        return taskService.findAll(findParams);
+        return taskService.findAll(findParams).getItems();
     }
 
     @Path("/{id}")

@@ -22,6 +22,7 @@
 
 package sk.fourq.mario.taskappbootstrap;
 
+import sk.fourq.bootstrap.domain.AclPermission;
 import sk.fourq.bootstrap.service.AbstractService;
 
 import javax.ejb.LocalBean;
@@ -42,5 +43,10 @@ public class TaskService extends AbstractService<Task, Integer> {
     @Override
     protected TaskDao getDao() {
         return this.taskDao;
+    }
+
+    @Override
+    protected void authorize(final Task entity, final AclPermission permission) {
+
     }
 }

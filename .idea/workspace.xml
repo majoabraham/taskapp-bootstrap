@@ -7,22 +7,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e636437-62b9-4b65-8c35-ebe65d66220c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/jboss-web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/AuthEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/StartupTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/UserProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/UserProfileDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/UserProfileDaoJpa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/UserProfileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webapp/WEB-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webapp/WEB-INF/jboss-web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/TaskResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/TaskResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/fourq/mario/taskappbootstrap/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/fourq/mario/taskappbootstrap/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/fourq/mario/taskappbootstrap/TaskResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/fourq/mario/taskappbootstrap/TaskResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sk/fourq/mario/taskappbootstrap/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sk/fourq/mario/taskappbootstrap/TaskService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/classes/sk/fourq/mario/taskappbootstrap/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/classes/sk/fourq/mario/taskappbootstrap/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/classes/sk/fourq/mario/taskappbootstrap/TaskResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/classes/sk/fourq/mario/taskappbootstrap/TaskResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/classes/sk/fourq/mario/taskappbootstrap/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/classes/sk/fourq/mario/taskappbootstrap/TaskService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/lib/bootstrap-server-1.3.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT/WEB-INF/lib/bootstrap-server-1.3.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT_BACKUP_8326.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT_BASE_8326.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT_LOCAL_8326.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taskapp-bootstrap-1.0-SNAPSHOT_REMOTE_8326.war" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/taskapp-bootstrap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/taskapp-bootstrap.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,18 +67,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap" />
     <property name="settings.editor.selected.configurable" value="copyright.profiles" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="sk.fourq.mario.taskappbootstrap" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/sk/fourq/mario/taskappbootstrap" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -140,6 +153,9 @@
         </option>
       </method>
     </configuration>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />

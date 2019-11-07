@@ -54,28 +54,28 @@ public class ApplicationConfig extends Application {
 
     public ApplicationConfig() {
         //BOOTSTRAP
-//        this.resources.add(BootstrapAuthFilter.class);
-//        this.resources.add(OriginAndRefererFilter.class);
-//        this.resources.add(XsrfProtectionFilter.class);
-//        this.resources.add(CudLimitFilter.class);
-//        this.resources.add(BootstrapInitializationFilter.class);
-//        this.resources.add(OptionsHandler.class);
-//        this.resources.add(ErrorExceptionMapper.class);
-//        this.resources.add(LicenseConsentFilter.class);
-//        this.resources.add(JsonVulnerabilityWriter.class);
-//        this.resources.add(ObjectMapperProvider.class);
+        this.resources.add(BootstrapAuthFilter.class);
+        this.resources.add(OriginAndRefererFilter.class);
+        this.resources.add(XsrfProtectionFilter.class);
+        this.resources.add(CudLimitFilter.class);
+        this.resources.add(BootstrapInitializationFilter.class);
+        this.resources.add(OptionsHandler.class);
+        this.resources.add(ErrorExceptionMapper.class);
+        this.resources.add(LicenseConsentFilter.class);
+        this.resources.add(JsonVulnerabilityWriter.class);
+        this.resources.add(ObjectMapperProvider.class);
         //RESTEASY
-//        this.resources.add(ResteasyJackson2Provider.class);
-//        this.resources.add(ValidatorContextResolver.class);
-//        this.resources.add(MimeMultipartProvider.class);
+        this.resources.add(ResteasyJackson2Provider.class);
+        this.resources.add(ValidatorContextResolver.class);
+        this.resources.add(MimeMultipartProvider.class);
         //JACKSON
-//        this.resources.add(JacksonFeatures.class);
+        this.resources.add(JacksonFeatures.class);
         //BOOTSTRAP RESOURCES
-//        this.resources.add(DefaultErrorResource.class);
-//        this.resources.add(DefaultEventResource.class);
-//        this.resources.add(DefaultUserResource.class);
-//        this.resources.add(DefaultGroupResource.class);
-//        this.resources.add(DefaultMaintenanceResource.class);
+        this.resources.add(DefaultErrorResource.class);
+        this.resources.add(DefaultEventResource.class);
+        this.resources.add(DefaultUserResource.class);
+        this.resources.add(DefaultGroupResource.class);
+        this.resources.add(DefaultMaintenanceResource.class);
         //CUSTOM RESOURCES
         this.resources.add(TaskResource.class);
     }
