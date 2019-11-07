@@ -78,6 +78,7 @@ public class ApplicationConfig extends Application {
         this.resources.add(DefaultMaintenanceResource.class);
         //CUSTOM RESOURCES
         this.resources.add(TaskResource.class);
+        this.resources.add(UserResource.class);
     }
 
     @Override
