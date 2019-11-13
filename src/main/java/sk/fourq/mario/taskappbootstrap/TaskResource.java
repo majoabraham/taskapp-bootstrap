@@ -35,6 +35,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Path("task")
@@ -51,45 +52,65 @@ public class TaskResource {
     private TaskService taskService;
 
     @GET
-    public List<Task> getTasks() {
+    public Response getTasks() {
 
         FindParams findParams = FindParams.create();
-        return taskService.findAll(findParams).getItems();
+        List<Task> tasks = taskService.findAll(findParams).getItems();
+
+        return Response.ok(tasks).build();
     }
 
     @Path("/{id}")
     @GET
-    public Task getTask(@PathParam("id") Integer id) {
+    public Response getTask(@PathParam("id") Integer id) {
 
-        return taskService.find(id);
+        Task task = taskService.find(id);
+
+        if (task != null) {
+            return Response.ok(task).build();
+        } else {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
     }
 
     @POST
-    public void createTask(Task task) {
+    public Response createTask(Task task) {
 
         taskService.create(task);
+
+        return Response.ok().status(Response.Status.CREATED).build();
     }
 
     @Path("/{id}")
     @DELETE
-    public void deleteTask(@PathParam("id") Integer id) {
+    public Response deleteTask(@PathParam("id") Integer id) {
 
-        taskService.delete(id);
+        Task task = taskService.delete(id);
+
+        if (task != null) {
+            return Response.ok().status(Response.Status.NO_CONTENT).build();
+        } else {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
     }
 
     @PUT
-    public Task updateTask(Task task) {
+    public Response updateTask(Task task) {
 
-        return taskService.update(task);
+        taskService.update(task);
+
+        return Response.ok().status(Response.Status.NO_CONTENT).build();
     }
 
     @Path("/filter/{text}")
     @GET
-    public List<Task> filterTasks(@PathParam("text") String text) {
+    public Response filterTasks(@PathParam("text") String text) {
 
         FindParams findParams = FindParams.create();
         findParams.addFilter("description", text);
 
-        return taskService.findAll(findParams).getItems();
+        List<Task> tasks = taskService.findAll(findParams).getItems();
+
+        return Response.ok(tasks).build();
     }
 }
